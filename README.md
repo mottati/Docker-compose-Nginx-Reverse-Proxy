@@ -8,14 +8,14 @@ This project was inspired by the following article.
 
 [Docker compose : Nginx reverse proxy with multiple containers](http://www.bogotobogo.com/DevOps/Docker/Docker-Compose-Nginx-Reverse-Proxy-Multiple-Containers.php) 
 
-This example is based upon the github repo referneced in that article: https://github.com/Einsteinish/Docker-compose-Nginx-Reverse-Proxy
+This example is based upon the github repo referenced in that article: https://github.com/Einsteinish/Docker-compose-Nginx-Reverse-Proxy
 
 Purpose
 -------
 
 The purpose of this project is to have an example of something we would 
 like to map into an openshift template. This example is greatly 
-simplified from what we would like to acheive. The communication pattern exemplifies what we would like to acheive in our openshift deployment. 
+simplified from what we would like to achieve. The communication pattern exemplifies what we would like to achieve in our openshift deployment. 
 
 In this example, there are three containers:
 - **reverseproxy**
@@ -47,6 +47,6 @@ $ curl -s http://localhost/server-b | grep "<title>"
 <title>Welcome to Server B!</title>
 ```
 
-We would like to create an equivilant openshift template to deploy containers in this sort of configuration. We are currently using Nginx as our reverseproxy, we would also consider either traefik or Apache HTTPD for this role. 
+We would like to create an equivalent openshift template to deploy containers in this sort of configuration. We are currently using Nginx as our reverseproxy, we would also consider either traefik or Apache HTTPD for this role. 
 
 In our real deployment, containers in the server-a server-b role, would include Grafana, InfluxDB, and a few others that can be routed to with an HTTP reverse proxy. 
