@@ -13,9 +13,7 @@ This example is based upon the github repo referenced in that article: https://g
 Purpose
 -------
 
-The purpose of this project is to have an example of something we would 
-like to map into an openshift template. This example is greatly 
-simplified from what we would like to achieve. The communication pattern exemplifies what we would like to achieve in our openshift deployment. 
+The purpose of this project is to provide an example of a configuration we would like to map into an openshift template. This example is greatly simplified from what we would like to implement. The communication pattern exemplifies what we would like to achieve in our own openshift deployment. 
 
 In this example, there are three containers:
 - **reverseproxy**
